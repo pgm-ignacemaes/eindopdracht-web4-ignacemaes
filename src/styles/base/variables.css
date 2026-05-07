@@ -1,0 +1,12 @@
+:root {
+  --color-dominant: hsl(24, 12%, 8%);
+  --color-secondary: hsl(30, 33%, 99%);
+  --color-accent: hsl(258, 100%, 90%);
+
+  --font-clash: "Clash Display", sans-serif;
+  --font-switzer: "Switzer", sans-serif;
+
+  --font-thin: 300;
+  --font-regular: 400;
+  --font-bold: 700;
+}
