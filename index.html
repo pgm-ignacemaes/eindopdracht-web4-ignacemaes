@@ -4,10 +4,62 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,700&f[]=switzer@300,400,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="src/styles/main.css" />
     <title>Eindopdracht Ignace</title>
   </head>
+
   <body>
+    <header>
+      <nav class="nav">
+        <div class="nav__container">
+          <a class="nav__logo" href="#"><img src="src/assets/images/logo.svg" alt="Home" /> </a>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#">What we do</a></li>
+            <li class="nav__item"><a href="#">About</a></li>
+            <li class="nav__item"><a href="#">Work</a></li>
+            <li class="nav__item"><a href="#">FAQ</a></li>
+            <li class="nav__item"><a href="#">Contact</a></li>
+          </ul>
+
+          <button class="nav__toggle">
+            <span class="nav__hamburger">
+              <span class="nav__hamburger-line"></span>
+              <span class="nav__hamburger-line"></span>
+            </span>
+            <span class="nav__toggle-text">Menu</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="menu">
+      <div class="menu__container">
+        <button class="menu__close"><i class="bi bi-x-lg"></i></button>
+
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#">What we do</a></li>
+          <li class="menu__item"><a href="#">About</a></li>
+          <li class="menu__item"><a href="#">Work</a></li>
+          <li class="menu__item"><a href="#">FAQ</a></li>
+          <li class="menu__item"><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="menu__bottom">
+          <div class="menu__languages">
+            <a class="menu__language" href="#">NL</a>
+            <a class="menu__language menu__language--active" href="#">EN</a>
+          </div>
+
+          <div class="menu__contact">
+            <a class="menu__contact-link" href="#">hello@sitetrip.be</a>
+            <a class="menu__contact-link" href="#">056 17 11 90</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="src/scripts/app.js"></script>
   </body>
 </html>
