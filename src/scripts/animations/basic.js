@@ -1,6 +1,6 @@
 import gsap from "gsap";
 
-export const hamburgerLineTween = ($elements) => {
+export const hamburgerIconTween = ($elements) => {
   $elements.forEach(($element, index) => {
     gsap.to($element, {
       rotateZ: index % 2 === 0 ? 45 : -45,

@@ -1,4 +1,4 @@
-const $menu = document.querySelector(".menu");
-const $menuLinks = document.querySelectorAll(".menu__link");
-const $openBtn = document.querySelector(".nav__toggle");
-const $closeBtn = document.querySelector(".menu__close");
+import { hamburgerIconTween } from "./animations/basic";
+
+const $hamburgerLines = document.querySelectorAll("");
+hamburgerIconTween($hamburgerLines);
