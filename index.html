@@ -2,14 +2,431 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,700&f[]=switzer@300,400,700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="src/styles/main.css" />
-    <title>Eindopdracht Ignace</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600,700&f[]=switzer@300,400,500,600,700&display=swap" rel="stylesheet" />
+    <title>Document</title>
   </head>
   <body>
-    <script type="module" src="src/scripts/app.js"></script>
+    <header class="header">
+      <a class="header__logo" href="#">
+        <img src="/assets/svg/logo.svg" alt="Logo of sitetrip" />
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#">What we do</a></li>
+          <li class="nav__item"><a href="#">About</a></li>
+          <li class="nav__item"><a href="#">Work</a></li>
+          <li class="nav__item"><a href="#">FAQ</a></li>
+        </ul>
+        <ul class="nav__list nav__list--contact">
+          <li class="nav__item nav__item--contact"><a href="#">Contact</a></li>
+        </ul>
+        <button class="nav-toggle">
+          <span class="nav-toggle__icon">
+            <span class="nav-toggle__line"></span>
+            <span class="nav-toggle__line"></span>
+          </span>
+          Menu
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1 class="hero__title">
+          <span>Together</span>
+          <span>on a digital</span>
+          <span>journey</span>
+        </h1>
+        <div class="hero__content">
+          <p class="hero__text">
+            We never just build a website. We create a digital experience. Expect creative design and UX with thoughtful strategy that comes to life technically
+            strong. And the fun part? We do it together. Ready for your digital journey?
+          </p>
+          <a class="link" href="#">
+            <span class="link__icon"></span>
+            Tell me more
+          </a>
+        </div>
+      </section>
+
+      <section class="video">
+        <div class="video__frame">
+          <div class="video__overlay">
+            <video src="/assets/videos/logo.webm" autoplay muted loop playsinline></video>
+          </div>
+          <video class="video__media" src="/assets/videos/showreel.webm" autoplay muted loop playsinline></video>
+        </div>
+      </section>
+
+      <section class="about">
+        <h2 class="about__title">
+          About
+          <span class="about__text">
+            We are a human-centered studio. You work directly with the makers of your website, no middlemen involved. We build thoughtfully - functional,
+            beautiful, and always pushing the boundaries.
+          </span>
+        </h2>
+      </section>
+
+      <section class="team">
+        <div class="team__grid">
+          <div class="team-member">
+            <img class="team-member__image" src="/assets/images/members/marieke.png" alt="An image of Marieke" />
+            <span class="team-member__label">Marieke</span>
+          </div>
+          <div class="team-member">
+            <img class="team-member__image" src="/assets/images/members/thomas.png" alt="An image of Thomas" />
+            <span class="team-member__label">Thomas</span>
+          </div>
+          <div class="team-member">
+            <img class="team-member__image" src="/assets/images/members/stijn.png" alt="An image of Stijn" />
+            <span class="team-member__label">Stijn</span>
+          </div>
+          <div class="team-member">
+            <img class="team-member__image" src="/assets/images/members/maarten.png" alt="An image of Maarten" />
+            <span class="team-member__label">Maarten</span>
+          </div>
+        </div>
+        <div class="team__actions">
+          <a class="link" href="#">
+            <span class="link__icon"></span>
+            More about us
+          </a>
+          <a class="link link--alt" href="#">
+            <span class="link__icon"></span>
+            Contact us
+          </a>
+        </div>
+      </section>
+
+      <section class="marquee">
+        <h2 class="marquee__title">Now working for</h2>
+        <div class="marquee__track">
+          <span class="marquee__item">Natuurpunt</span>
+          <img class="marquee__logo" src="/assets/svg/logo-marquee.svg" alt="Logo icon of Sitetrip" />
+          <span class="marquee__item">JUUNOO</span>
+          <img class="marquee__logo" src="/assets/svg/logo-marquee.svg" alt="Logo icon of Sitetrip" />
+          <span class="marquee__item">Allset</span>
+          <img class="marquee__logo" src="/assets/svg/logo-marquee.svg" alt="Logo icon of Sitetrip" />
+          <span class="marquee__item">Studio Modular</span>
+          <img class="marquee__logo" src="/assets/svg/logo-marquee.svg" alt="Logo icon of Sitetrip" />
+          <span class="marquee__item">BUR.O</span>
+          <img class="marquee__logo" src="/assets/svg/logo-marquee.svg" alt="Logo icon of Sitetrip" />
+        </div>
+      </section>
+
+      <section class="journey">
+        <h2 class="journey__title">This is what your journey looks like</h2>
+        <div class="journey__grid">
+          <article class="journey-card">
+            <span class="journey-card__step">(01)</span>
+            <h3 class="journey-card__title">Personal studio</h3>
+            <p class="journey-card__text">
+              We are a personal studio. You work directly with the experts building your website - no middlemen, just real, personal contact. And you can feel
+              it in the final result.
+            </p>
+          </article>
+          <article class="journey-card">
+            <span class="journey-card__step">(02)</span>
+            <h3 class="journey-card__title">Creative & technical</h3>
+            <p class="journey-card__text">
+              You don't have to choose between a beautiful website or a solid one. With us, you get both. We understand design and bring it to life technically.
+              With animations, interactive details and creative coding, we're not afraid to push boundaries.
+            </p>
+          </article>
+          <article class="journey-card">
+            <span class="journey-card__step">(03)</span>
+            <h3 class="journey-card__title">Hands-on experts</h3>
+            <p class="journey-card__text">
+              At Sitetrip, four experts bring together over 50 years of combined experience in UX, front-end, and back-end development. Together with external
+              specialists in branding, web design, copywriting, and animation, we complement each other to build digital products that truly stand out.
+            </p>
+          </article>
+          <article class="journey-card">
+            <span class="journey-card__step">(04)</span>
+            <h3 class="journey-card__title">No quick shortcuts</h3>
+            <p class="journey-card__text">
+              We don't do rushed websites. We always start with analysis and optimisation, so you get a solution that strengthens your brand and grows with you
+              in the long run.
+            </p>
+          </article>
+          <article class="journey-card">
+            <span class="journey-card__step">(05)</span>
+            <h3 class="journey-card__title">Partners, not suppliers</h3>
+            <p class="journey-card__text">
+              We don't blindly execute - and we don't decide your brand's direction on our own either. With us, you get a (long-term) collaboration where we
+              think and grow together. Together on a digital journey.
+            </p>
+          </article>
+          <article class="journey-card">
+            <span class="journey-card__step">(06)</span>
+            <h3 class="journey-card__title">Open source & Drupal</h3>
+            <p class="journey-card__text">
+              We consciously choose <a href="#">open source technologies like Drupal</a>, where collaboration is key. This ensures our digital journeys are
+              flexible, scalable and future-proof.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="clients-logos">
+        <article class="clients-logos__row">
+          <img class="clients-logos__image" src="/assets/images/logos/klief.svg" alt="Logo of Klief" />
+          <img class="clients-logos__image" src="/assets/images/logos/kortrijk-xpo.svg" alt="Logo of Kortrijk Expo" />
+        </article>
+        <article class="clients-logos__row">
+          <img class="clients-logos__image" src="/assets/images/logos/alheembouw.svg" alt="Logo of Alheembouw" />
+          <img class="clients-logos__image" src="/assets/images/logos/natuurpunt.svg" alt="Logo of Natuurpunt" />
+        </article>
+        <article class="clients-logos__row">
+          <img class="clients-logos__image" src="/assets/images/logos/hitch.svg" alt="Logo of Hitch" />
+          <img class="clients-logos__image" src="/assets/images/logos/kaat-dm.svg" alt="Logo of Kaat dm" />
+        </article>
+        <article class="clients-logos__row">
+          <img class="clients-logos__image" src="/assets/images/logos/kwaliteitscentrum-diagnostiek.svg" alt="" />
+          <img class="clients-logos__image" src="/assets/images/logos/britt-vangenechten.svg" alt="" />
+        </article>
+        <article class="clients-logos__row">
+          <img class="clients-logos__image" src="/assets/images/logos/bliksem-schrijfbureau.svg" alt="Logo of Bliksem schrijfbureau" />
+          <img class="clients-logos__image" src="/assets/images/logos/koplamp.svg" alt="Logo of koplamp" />
+        </article>
+      </section>
+
+      <section class="services">
+        <article class="services-card">
+          <p class="services-card__header">
+            <span class="services-card__label">What we do</span>
+            <span class="services-card__count">1/4</span>
+          </p>
+          <div class="services-card__body">
+            <img class="services-card__image" src="/assets/images/cards/websites.png" alt="Image for websites card" />
+            <div class="services-card__content">
+              <h2 class="services-card__title">Websites</h2>
+              <h3 class="services-card__subtitle">that work and convince</h3>
+              <p class="services-card__text">
+                From a simple landing page to a complex, multilingual site with integrations to internal systems&hellip; Can't see where you're starting or
+                ending? We build websites that load quickly, are easy to manage, align with your brand, and are visually appealing.
+              </p>
+              <a class="link link--alt" href="#">
+                <span class="link__icon"></span>
+                More about websites
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="services-card">
+          <p class="services-card__header">
+            <span class="services-card__label">What we do</span>
+            <span class="services-card__count">2/4</span>
+          </p>
+          <div class="services-card__body">
+            <img class="services-card__image" src="/assets/images/cards/web-applications.png" alt="Image for web applications card" />
+            <div class="services-card__content">
+              <h2 class="services-card__title">Web applications</h2>
+              <h3 class="services-card__subtitle">that make your journey easier</h3>
+              <p class="services-card__text">
+                Looking for a tool or webshop to accelerate your systems, structure your data, or streamline the customer journey? We'll create a custom web app
+                with your end goal in mind.
+              </p>
+              <a class="link link--alt" href="#">
+                <span class="link__icon"></span>
+                Tell me more
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="services-card">
+          <p class="services-card__header">
+            <span class="services-card__label">What we do</span>
+            <span class="services-card__count">3/4</span>
+          </p>
+          <div class="services-card__body">
+            <img class="services-card__image" src="/assets/images/cards/ux-analysis.png" alt="Image for UX analysis card" />
+            <div class="services-card__content">
+              <h2 class="services-card__title">UX & Analysis</h2>
+              <h3 class="services-card__subtitle">that gives direction before you start</h3>
+              <p class="services-card__text">
+                Whether you want to build your own website, start a large UX project or improve your existing site, a well-considered analysis is always the
+                starting point.
+              </p>
+              <a class="link link--alt" href="#">
+                <span class="link__icon"></span>
+                I would like an analysis
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="services-card">
+          <p class="services-card__header">
+            <span class="services-card__label">What we do</span>
+            <span class="services-card__count">4/4</span>
+          </p>
+          <div class="services-card__body">
+            <img class="services-card__image" src="/assets/images/cards/online-marketing.png" alt="Image for online marketing card" />
+            <div class="services-card__content">
+              <h2 class="services-card__title">Online marketing</h2>
+              <h3 class="services-card__subtitle">to grow your website</h3>
+              <p class="services-card__text">
+                Smart choices start with data. Your marketing can only truly succeed if the technical foundation is sound. At Sitetrip, we set everything up for
+                optimal tracking, analytics, and integrations.
+              </p>
+              <a class="link link--alt" href="#">
+                <span class="link__icon"></span>
+                More about this
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="work">
+        <div class="work__header">
+          <h2 class="work__title"><span>Work</span> Highlighted cases</h2>
+          <a class="link" href="#">View all projects</a>
+        </div>
+        <div class="work__grid">
+          <article class="work-card">
+            <img class="work-card__image" src="/assets/images/work/kaat-dm.png" alt="Image for Kaat dm card" />
+            <h3 class="work-card__title">Kaat DM</h3>
+            <a class="work-card__text" href="#">A premium website for a female photographer</a>
+          </article>
+          <article class="work-card">
+            <img class="work-card__image" src="/assets/images/work/kwaliteitscentrum-diagnostiek.png" alt="Image for Kwaliteitscentrum Diagnostiek" />
+            <h3 class="work-card__title">Kwaliteitscentrum Diagnostiek</h3>
+            <a class="work-card__text" href="#">Website for education and knowledge sharing</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="testimonials-icon">
+          <img class="testimonials-icon__text" src="/assets/svg/rotating-text.svg" alt="Rotating text for testimonials icon" />
+          <div class="testimonials-icon__center">
+            <img class="testimonials-icon__hand" src="/assets/svg/hand.svg" alt="Hand icn for testimonials icon" />
+          </div>
+        </div>
+        <div class="testimonials__wrapper">
+          <article class="testimonials-item">
+            <div class="testimonials-item__content">
+              <p class="testimonials-item__opening">Website Natuurpunt</p>
+              <p class="testimonials-item__text">
+                Thanks Sitetrip. With your expertise, problem-solving skills, and tireless positive attitude, we always manage to get the most out of it. Thank
+                you for your commitment, creativity, and hard work in not only maintaining this large, complex website but also continually expanding and
+                improving it.
+              </p>
+            </div>
+            <div class="testimonials-item__author">
+              <img class="testimonials-item__image" src="/assets/images/carousel/natuurpunt.jpg" alt="Profile picture of Natuurpunt" />
+              <p class="testimonials-item__name">Natuurpunt</p>
+            </div>
+          </article>
+          <article class="testimonials-item">
+            <div class="testimonials-item__content">
+              <p class="testimonials-item__opening">Website Elke Van Den Ende</p>
+              <p class="testimonials-item__text">
+                I worked with Sitetrip to build a new website. The communication went smoothly, everything was very transparent, timing and deadlines were
+                strictly adhered to. In case of issues, the team reacts quickly and professionally. During the process of creating a new website, I occasionally
+                got gray hairs, but fortunately, I could rely on Sitetrip for a pleasant and reliable collaboration. You can tell that they value quality and
+                customer friendliness as a team. Very happy with the final result!
+              </p>
+            </div>
+            <div class="testimonials-item__author">
+              <img class="testimonials-item__image" src="/assets/images/carousel/elke.jpg" alt="Profile picture of Elke" />
+              <p class="testimonials-item__name">
+                Elke Van Den Ende
+                <span class="testimonials-item__role"> Photographer </span>
+              </p>
+            </div>
+          </article>
+          <article class="testimonials-item">
+            <div class="testimonials-item__content">
+              <p class="testimonials-item__opening">Collaboration Buroko</p>
+              <p class="testimonials-item__text">
+                I could write exclusively in superlatives when it comes to Sitetrip, but then it quickly becomes cheesy. So here's a shorter version. The
+                websites: top quality, pixel-perfect, sustainable, future-proof, and focused on results. The team: enthusiastic, accessible, highly skilled, and
+                great to work with. HIGHLY RECOMMENDED.
+              </p>
+            </div>
+            <div class="testimonials-item__author">
+              <p class="testimonials-item__name">
+                Arthur Pauwels
+                <span class="testimonials-item__role"> Brand & web designer </span>
+              </p>
+            </div>
+          </article>
+          <article class="testimonials-item">
+            <div class="testimonials-item__content">
+              <p class="testimonials-item__opening">Website Elephant in a Room</p>
+              <p class="testimonials-item__text">
+                Sitetrip deserves all the stars I give. On the one hand for the most obvious reason: in collaboration with unhide, they constructed the ideal
+                website for my company. On the other hand (and above all) especially for the tremendous service they continue to offer long after the launch. I
+                have a soft spot for people with smooth communication and, as a result, I swoon over their approach. Quick replies, an enormously helpful
+                attitude, and a problem-solving ability that, once again, deserves 5 stars.
+              </p>
+            </div>
+            <div class="testimonials-item__author">
+              <img class="testimonials-item__image" src="/assets/images/carousel/emiel.jpg" alt="Profile picture of Emiel" />
+              <p class="testimonials-item__name">
+                Emiel Van Den Eynden
+                <span class="testimonials-item__role"> Ceremony speaker </span>
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="testimonials__controls"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <h2 class="footer__title">Contact</h2>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#">056 17 11 90</a></li>
+          <li class="footer__item"><a href="#">hello@sitetrip.be</a></li>
+        </ul>
+        <ul class="footer__socials">
+          <li class="footer__socials-item">
+            <a href="#"><img src="/assets/svg/instagram.svg" alt="Icon of Instagram" /></a>
+          </li>
+          <li class="footer__socials-item">
+            <a href="#"><img src="/assets/svg/linkedin.svg" alt="Icon of Linkedin" /></a>
+          </li>
+        </ul>
+        <ul class="footer__languages">
+          <li class="footer__languages-item"><a href="#">NL</a></li>
+          <li class="footer__languages-item"><a href="#">EN</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <ul class="footer__policies">
+          <li class="footer__policies-item"><a href="#">Privacy policy</a></li>
+          <li class="footer__policies-item"><a href="#">Disclaimer</a></li>
+          <li class="footer__policies-item"><a href="#">Cookies</a></li>
+          <li class="footer__policies-item"><a href="#">Community</a></li>
+        </ul>
+        <span class="footer__copyright">&copy;2026 Sitetrip</span>
+      </div>
+    </footer>
+
+    <dialog class="dialog">
+      <ul class="dialog__list">
+        <li class="dialog__item"><a href="#">What we do</a></li>
+        <li class="dialog__item"><a href="#">About</a></li>
+        <li class="dialog__item"><a href="#">Work</a></li>
+        <li class="dialog__item"><a href="#">FAQ</a></li>
+        <li class="dialog__item"><a href="#">Contact</a></li>
+      </ul>
+      <ul class="dialog__languages">
+        <li class="dialog__languages-item"><a href="#">NL</a></li>
+        <li class="dialog__languages-item"><a href="#">EN</a></li>
+      </ul>
+      <ul class="dialog__contact">
+        <li class="dialog__contact-item"><a href="#">056 17 11 90</a></li>
+        <li class="dialog__contact-item"><a href="#">hello@sitetrip.be</a></li>
+      </ul>
+    </dialog>
+
+    <script type="module" src="src/scripts/main.js"></script>
   </body>
 </html>
