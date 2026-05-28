@@ -1,0 +1,43 @@
+.video {
+  padding-inline: 1.5rem;
+  padding-bottom: 10rem;
+}
+
+.video__frame {
+  position: relative;
+  width: 100%;
+}
+
+.video__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 20%;
+
+  background-color: var(--color-dominant);
+  mask-image: url("assets/svg/corner.svg");
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  overflow: hidden;
+
+  @media (min-width: 48rem) {
+    max-width: 15%;
+  }
+}
+
+.video__overlay video {
+  display: block;
+  aspect-ratio: 1 / 1;
+  width: 80%;
+
+  object-fit: contain;
+  object-position: center;
+}
+
+.video__media {
+  border-radius: 0.5rem;
+  width: 100%;
+}

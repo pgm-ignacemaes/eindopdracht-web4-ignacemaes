@@ -1,3 +1,16 @@
-@import "base/base.css";
-@import "base/globals.css";
-@import "base/variables.css";
+/* Base */
+@import url("./base/_reset.css");
+@import url("./base/_variables.css");
+
+/* Components */
+@import url("./components/_header.css");
+@import url("./components/_dialog.css");
+@import url("./components/_link.css");
+
+/* Sections */
+@import url("./sections/_hero.css");
+@import url("./sections/_video.css");
+@import url("./sections/_about.css");
+@import url("./sections/_team.css");
+@import url("./sections/_marquee.css");
+@import url("./sections/_journey.css");

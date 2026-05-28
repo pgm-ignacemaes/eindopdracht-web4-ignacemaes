@@ -1,0 +1,27 @@
+.link {
+  --background-color: var(--color-accent);
+  --text-color: var(--color-dominant);
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.5rem 1rem;
+  border-radius: 4rem;
+}
+
+.link__icon {
+  background-color: var(--text-color);
+
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  width: 0.5rem;
+}
+
+.link--alt {
+  --background-color: var(--color-dominant);
+  --text-color: var(--color-secondary);
+}

@@ -1,0 +1,44 @@
+.journey {
+  padding-inline: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.journey__title {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  line-height: 100%;
+}
+
+.journey__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.journey-card {
+  background-color: var(--color-accent);
+  color: var(--color-dominant);
+
+  border-radius: 1rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.journey-card__step {
+  font-family: var(--font-clash);
+  font-weight: 600;
+}
+
+.journey-card__title {
+  font-size: 2rem;
+  line-height: 100%;
+  font-weight: 600;
+}
